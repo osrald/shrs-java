@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EarlyRegistration" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a0e3029-c352-4e0b-bfb8-fef3bff46d29">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="52"/>
+	<field name="st_scy" class="java.lang.String"/>
+	<field name="sd_firstname" class="java.lang.String"/>
+	<field name="sd_middlename" class="java.lang.String"/>
+	<field name="sd_lastname" class="java.lang.String"/>
+	<field name="sd_gender" class="java.lang.String"/>
+	<field name="sd_dob" class="java.lang.String"/>
+	<field name="sd_age" class="java.lang.String"/>
+	<field name="sd_nationality" class="java.lang.String"/>
+	<field name="sd_birthplace" class="java.lang.String"/>
+	<field name="sd_elem_name" class="java.lang.String"/>
+	<field name="sd_elem_comp_year" class="java.lang.String"/>
+	<field name="sd_elem_school_addr" class="java.lang.String"/>
+	<field name="sd_elem_region" class="java.lang.String"/>
+	<field name="sd_elem_pept_passer" class="java.lang.String"/>
+	<field name="sd_elem_ae_passer" class="java.lang.String"/>
+	<field name="sd_jhs_name" class="java.lang.String"/>
+	<field name="sd_jhs_comp_year" class="java.lang.String"/>
+	<field name="sd_jhs_addr" class="java.lang.String"/>
+	<field name="sd_jhs_region" class="java.lang.String"/>
+	<field name="sd_jhs_pept_passer" class="java.lang.String"/>
+	<field name="sd_jhs_ae_passer" class="java.lang.String"/>
+	<field name="fc_scn" class="java.lang.String"/>
+	<field name="fc_track" class="java.lang.String"/>
+	<field name="fc_strandspec" class="java.lang.String"/>
+	<field name="sc_scn" class="java.lang.String"/>
+	<field name="sc_track" class="java.lang.String"/>
+	<field name="sc_strandspec" class="java.lang.String"/>
+	<detail>
+		<band height="398">
+			<staticText>
+				<reportElement x="217" y="0" width="130" height="20" uuid="21b9772a-38f3-47ed-b158-576cc5daffbe"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Makati High School]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="20" width="66" height="17" uuid="22dc38b8-9725-4d3b-b9a2-cb75b0d2db87"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Makati City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="37" width="23" height="17" uuid="c80cdd26-6ff1-432b-aa71-18120dc7d18d"/>
+				<textElement textAlignment="Right">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[S.Y.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="264" y="37" width="83" height="17" uuid="64bdfa29-b92b-43c9-bed0-4cac468e2125"/>
+				<textElement>
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{st_scy}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="54" width="552" height="20" uuid="60b9ad7e-0baa-43d4-9ca5-b5a370ce3ba4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Senior High Automated Registration and Enrollment System]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="74" width="72" height="17" uuid="fc2c1e58-ef5e-4428-9ca8-8e86d2d5aff7"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Lastname:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="72" y="91" width="481" height="17" uuid="2e86a0fb-c66a-4b78-9053-abe2a5c1f042"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="108" width="481" height="17" uuid="7a0a23a1-9efe-475b-92ca-74b058d107ae"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_middlename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="74" width="481" height="17" uuid="ed8c8343-440b-4e3b-96da-5a20982f7d74"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_lastname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="125" width="49" height="17" uuid="155a5293-f94a-4d8e-9377-79a4b0d27668"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="125" width="86" height="17" uuid="50b6adfc-b8b4-45fb-8eb7-e368d83b5248"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_gender}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="151" y="3" width="66" height="51" uuid="23aef32e-5085-491b-82fb-8484fe1e76bb"/>
+				<imageExpression><![CDATA["..\\reports\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="135" y="125" width="85" height="17" uuid="f5feae87-4c7b-47c3-99bc-c41634c8ef52"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date of birth:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="220" y="125" width="56" height="17" uuid="dad95603-0294-4e21-9185-7393e88bb744"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_dob}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="142" width="83" height="17" uuid="0796e4c0-40c0-4f10-8b6e-2ba4e133ae7f"/>
+				<textElement textAlignment="Left">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Place of birth:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="142" width="469" height="17" uuid="09e595a2-3946-4116-bdb6-ab5384f5680a"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_birthplace}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="125" width="40" height="17" uuid="4d0b2138-3bcf-4574-80d2-331cc7ca4bef"/>
+				<textElement textAlignment="Right">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="318" y="125" width="24" height="17" uuid="c84a0e93-b90c-4bbe-bae1-c9159787e084"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="261" width="184" height="17" uuid="c371bb9b-acbb-4b8f-8c55-50b7ccd34dda"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Senior High School (SHS) Applied For:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="295" width="84" height="17" uuid="daca36e2-ddc5-4ea3-bf15-581f7853bf60"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[First Choice Track:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="295" width="179" height="17" uuid="5dc85222-24f0-49f3-9e06-bd7a65980659"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fc_track}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="264" y="295" width="98" height="17" uuid="4698fbd6-529f-4ffc-8059-563c7c27d2aa"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Strand/Specialization:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="362" y="295" width="191" height="17" uuid="b78c72a7-b49a-422f-a047-fe360c65914a"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fc_strandspec}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="159" width="83" height="17" uuid="e74a98d2-4024-41dd-8240-543c5f11c94d"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Elementary School:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="159" width="355" height="17" uuid="7c3d7108-9a5f-4eb5-b33c-d9779dbc51d3"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="515" y="159" width="38" height="17" uuid="a9afb265-59c8-4f06-9a4b-02e5039b28dd"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_comp_year}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="439" y="159" width="76" height="17" uuid="ead5e35b-bf95-4ad6-a1ed-cb9200ac3a77"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Year Graduated:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="68" y="193" width="28" height="17" uuid="d7e52fe2-2b98-46e1-8ec9-420b926ecbf3"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_pept_passer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="193" width="65" height="17" uuid="131f1a79-a120-43d4-ae8e-e24fc378e1cf"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PEPT Passer:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="193" width="24" height="17" uuid="8e1ffce0-6a3f-40a5-9d84-50ba5eb6a9cc"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_ae_passer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="193" width="67" height="17" uuid="6991db16-a58e-4c2a-a641-13c0a98ae82d"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[A & E Passer:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="210" width="355" height="17" uuid="674744e4-df8a-4ee6-8b50-493dbabc399c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="439" y="210" width="76" height="17" uuid="e4378f61-738e-4307-847f-ed124be2261c"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Year Completed:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="210" width="83" height="17" uuid="b2c2e690-fb92-48e4-8f0f-21f7bfbb56ea"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Junior High School:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="515" y="210" width="38" height="17" uuid="cc0e9ece-f80a-4e0b-aa48-54739a4c50c7"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_comp_year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="68" y="244" width="28" height="17" uuid="b43d31bf-eb76-4be1-8894-7eff71df53c6"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_pept_passer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="244" width="65" height="17" uuid="59afc18b-91bd-41b6-8a6f-6f43fe270947"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PEPT Passer:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="244" width="24" height="17" uuid="b1c6d210-7e4a-4505-86e1-e316c3e48adc"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_ae_passer}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="96" y="244" width="67" height="17" uuid="3dd52326-95de-4b52-a4bc-e49af265d11a"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[A & E Passer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="377" width="210" height="17" uuid="4bc7696d-66bd-4e69-b2d0-8297190af39b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Signature over Printed Name - Guidance Councilor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="359" width="61" height="17" uuid="4764a6ed-6867-4949-b2d5-4a0d0654e591"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[APPROVED]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="395" width="555" height="1" uuid="78c79e8f-c772-4049-81ee-cc94e07223cc"/>
+			</line>
+			<line>
+				<reportElement x="160" y="376" width="210" height="1" uuid="c063a8df-9e41-44a9-8298-69194da03c02"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="91" width="72" height="17" uuid="facc9a3b-53c8-4b28-913f-1aa15c93f6b3"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Firstname:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="108" width="72" height="17" uuid="199a0b5e-3245-451e-94e6-dcc3b12fe296"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Middlename:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="125" width="74" height="17" uuid="665b1502-7869-4f7c-bc86-f37be7fad12b"/>
+				<textElement textAlignment="Right">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Nationality:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="415" y="125" width="138" height="17" uuid="dfbb443b-ff62-4f48-abe7-e8866d0171f4"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_nationality}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="37" y="176" width="333" height="17" uuid="0394048a-d820-4bef-938d-6dd1c3ee1ba4"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_school_addr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="176" width="36" height="17" uuid="40cb74fe-5de3-44db-a238-dde765bb383a"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="176" width="36" height="17" uuid="b07ee652-7f63-4e40-82c8-da45d206bbb6"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Region:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="406" y="176" width="147" height="17" uuid="b76b48ad-de84-4756-a20a-c71d6760d973"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_elem_region}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="227" width="36" height="17" uuid="6be0da0e-3695-4d4d-82a9-439cdfac7ea2"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="37" y="227" width="333" height="17" uuid="cfaf29d3-bb96-4ee0-96a8-ba327ee17aa4"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_addr}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="227" width="36" height="17" uuid="b536b88f-b413-4c75-a497-bd87e9632f1f"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Region:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="406" y="227" width="147" height="17" uuid="30f3fc11-41cc-426b-bbcf-cfc789484e3c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_jhs_region}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="278" width="84" height="17" uuid="03d0976d-5bb4-4501-880e-e3a079d7fbe9"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[First Choice School:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="278" width="469" height="17" uuid="4d690ecd-0e60-48a6-897c-cb6ac8b2a3e9"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fc_scn}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="312" width="457" height="17" uuid="25f8d462-87a9-4d31-8299-747898728326"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sc_scn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="312" width="96" height="17" uuid="545e6fb8-aeb6-4337-95e7-23b2a521042f"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Second Choice School:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="328" width="96" height="17" uuid="eeee4545-c745-4f01-a42e-244d36f4ad8b"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Second Choice Track:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="328" width="98" height="17" uuid="4a4b32ff-e7be-4b75-9097-2f20cc6c4132"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Strand/Specialization:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="362" y="328" width="191" height="17" uuid="c7d8c2f4-12d7-4bac-af49-4eb3d1ee9d27"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sc_strandspec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="328" width="167" height="17" uuid="db47c76c-7a79-45d1-b58a-d393f33cde28"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sc_track}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

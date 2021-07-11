@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ImageLoad" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a0e3029-c352-4e0b-bfb8-fef3bff46d29">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<detail>
+		<band height="398">
+			<image>
+				<reportElement x="0" y="0" width="321" height="398" uuid="23aef32e-5085-491b-82fb-8484fe1e76bb"/>
+				<imageExpression><![CDATA["..\\reports\\Test.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="321" y="0" width="234" height="20" uuid="9d5bcbc9-0b73-4564-8f15-26e6a09b848b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Makati High School]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

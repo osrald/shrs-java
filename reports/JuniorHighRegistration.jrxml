@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JuniorHighRegistration" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a0e3029-c352-4e0b-bfb8-fef3bff46d29">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="35"/>
+	<field name="sd_firstname" class="java.lang.String"/>
+	<field name="sd_middlename" class="java.lang.String"/>
+	<field name="sd_lastname" class="java.lang.String"/>
+	<field name="sd_gender" class="java.lang.String"/>
+	<field name="sd_dob" class="java.lang.String"/>
+	<field name="sd_age" class="java.lang.String"/>
+	<field name="sd_registration_date" class="java.lang.String"/>
+	<field name="sd_lastschool_attended" class="java.lang.String"/>
+	<field name="sd_lastschool_address" class="java.lang.String"/>
+	<field name="so_guardian_name" class="java.lang.String"/>
+	<field name="so_guardian_relation" class="java.lang.String"/>
+	<field name="so_guardian_contact_no" class="java.lang.String"/>
+	<field name="sd_addr_houseno" class="java.lang.String"/>
+	<field name="sd_addr_street" class="java.lang.String"/>
+	<field name="sd_addr_barangay" class="java.lang.String"/>
+	<field name="sd_addr_citymunicipality" class="java.lang.String"/>
+	<field name="sd_lrn_no" class="java.lang.String"/>
+	<detail>
+		<band height="398">
+			<staticText>
+				<reportElement x="217" y="0" width="130" height="20" uuid="21b9772a-38f3-47ed-b158-576cc5daffbe"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Makati High School]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="20" width="171" height="17" uuid="c80cdd26-6ff1-432b-aa71-18120dc7d18d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[Gen. Luna St. Poblacion, Makati City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="54" width="552" height="20" uuid="60b9ad7e-0baa-43d4-9ca5-b5a370ce3ba4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Senior High Automated Registration and Enrollment System]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="96" width="82" height="17" uuid="fc2c1e58-ef5e-4428-9ca8-8e86d2d5aff7"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[LASTNAME:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="113" width="471" height="17" uuid="2e86a0fb-c66a-4b78-9053-abe2a5c1f042"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="130" width="471" height="17" uuid="7a0a23a1-9efe-475b-92ca-74b058d107ae"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_middlename}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="96" width="471" height="17" uuid="ed8c8343-440b-4e3b-96da-5a20982f7d74"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_lastname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="147" width="49" height="17" uuid="155a5293-f94a-4d8e-9377-79a4b0d27668"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[GENDER:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="147" width="86" height="17" uuid="50b6adfc-b8b4-45fb-8eb7-e368d83b5248"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_gender}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="143" y="3" width="66" height="51" uuid="23aef32e-5085-491b-82fb-8484fe1e76bb"/>
+				<imageExpression><![CDATA["..\\reports\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="135" y="147" width="64" height="17" uuid="f5feae87-4c7b-47c3-99bc-c41634c8ef52"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[BIRTHDATE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="199" y="147" width="56" height="17" uuid="dad95603-0294-4e21-9185-7393e88bb744"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_dob}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="257" y="147" width="40" height="17" uuid="4d0b2138-3bcf-4574-80d2-331cc7ca4bef"/>
+				<textElement textAlignment="Right">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AGE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="297" y="147" width="24" height="17" uuid="c84a0e93-b90c-4bbe-bae1-c9159787e084"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="351" width="210" height="17" uuid="4bc7696d-66bd-4e69-b2d0-8297190af39b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Enrolling Guidance Councilor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="333" width="61" height="17" uuid="4764a6ed-6867-4949-b2d5-4a0d0654e591"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[APPROVED]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="395" width="555" height="1" uuid="78c79e8f-c772-4049-81ee-cc94e07223cc"/>
+			</line>
+			<line>
+				<reportElement x="160" y="350" width="210" height="1" uuid="c063a8df-9e41-44a9-8298-69194da03c02"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="113" width="82" height="17" uuid="facc9a3b-53c8-4b28-913f-1aa15c93f6b3"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FIRSTNAME:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="82" height="17" uuid="199a0b5e-3245-451e-94e6-dcc3b12fe296"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[MIDDLENAME:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="295" y="168" width="124" height="17" uuid="9f0856b4-f480-4445-aec9-9cd60e3574bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_addr_barangay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="53" y="168" width="66" height="17" uuid="89d0b810-0419-4fc5-9805-d635a65f1b29"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_addr_houseno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="295" y="185" width="124" height="17" uuid="82d66de5-2f1c-435c-8602-8a10eaec8f43"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Barangay)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="185" width="66" height="17" uuid="02ea411f-95eb-41b5-b41a-c3d5cd7b37cd"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(House No.)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="168" width="175" height="17" uuid="521d494f-fc50-4513-89a9-5698f3407410"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_addr_street}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="419" y="168" width="135" height="17" uuid="2b68aab7-ef08-4892-be5b-36c47aab6b0b"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_addr_citymunicipality}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="185" width="135" height="17" uuid="5f6e0f00-7dc3-4eb7-8035-35bc3060e385"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(City/Municipality)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="168" width="59" height="17" uuid="aeecc269-101a-4e6c-ad79-a037932b72d8"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ADDRESS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="185" width="175" height="17" uuid="a66341ca-1e31-466b-8b10-e87aacbe7616"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="8" isBold="false" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[(Street)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="147" width="92" height="17" uuid="63915597-e982-4abd-af19-dd64bd19c9fb"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TEL.NO./CEL.NO.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="407" y="147" width="145" height="17" uuid="dd2dd75c-93f7-4cf2-96e5-2c59e1a8d2df"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{so_guardian_contact_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="206" width="113" height="17" uuid="c0a9c82f-4174-49d6-81f9-e6474af9edf5"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NAME OF GUARDIAN:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="206" width="439" height="17" uuid="3a7221ec-d9c7-468c-80bd-5d4d26abb361"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{so_guardian_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="223" width="83" height="17" uuid="7c913f17-10b0-4b97-9be1-2aed0bbd06cd"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[RELATIONSHIP:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="84" y="223" width="468" height="17" uuid="bfa0190f-5d4b-41ae-933d-97785ce7b73b"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{so_guardian_relation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="261" width="500" height="17" uuid="243a350b-bcc4-4d0f-a064-d73db9a13721"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_lastschool_address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="244" width="135" height="17" uuid="f04d985b-524d-433d-8e09-226c8b69acf5"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SCHOOL LAST ATTENDED:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="261" width="52" height="17" uuid="b502115b-7cb8-4278-a060-316e91cd70c0"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ADDRESS:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="244" width="417" height="17" uuid="6e1929b5-9d3b-48c9-81a2-3da871bd2471"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_lastschool_attended}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="74" width="81" height="17" uuid="5d35c58c-9c48-40aa-b6ad-e602bb3ac2a4"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Registration Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="74" width="135" height="17" uuid="6cc53818-f2f7-4760-8ec7-11337e58ad2e"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_registration_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="279" width="199" height="17" uuid="a4a992e5-1d7d-4445-af10-291bd98c9851"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[LEARNER'S REFERENCE NUMBER (LRN):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="199" y="279" width="325" height="17" uuid="3fe4771a-3e93-4238-b65a-14043ca8b096"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_lrn_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

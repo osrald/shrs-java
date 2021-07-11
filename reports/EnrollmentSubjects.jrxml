@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EnrollmentSubjects" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="a5d0896d-2c83-4402-8ace-7a55dd2eda35">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="92"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="sj_sy" class="java.lang.String"/>
+	<field name="sj_gradesection" class="java.lang.String"/>
+	<field name="sj_time" class="java.lang.String"/>
+	<field name="sj_subject" class="java.lang.String"/>
+	<field name="sj_subject_teacher" class="java.lang.String"/>
+	<field name="sj_room_no" class="java.lang.String"/>
+	<field name="sd_shs_class_adviser" class="java.lang.String"/>
+	<field name="sd_student_name" class="java.lang.String"/>
+	<field name="sd_shs_principal" class="java.lang.String"/>
+	<field name="sd_shs_principal_lvl" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement x="213" y="0" width="130" height="20" uuid="70d76cb6-ec17-416a-a046-8138d32d548a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Makati High School]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="20" width="66" height="17" uuid="16e5b707-0ec6-4504-b2ac-ca61968b9cfa"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Makati City]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="402" y="91" width="98" height="17" uuid="73472bb4-e4af-4995-9d55-e93cc60c1014"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_sy}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="402" y="74" width="98" height="17" uuid="c4615b67-6f49-4be3-a17d-99f737f5b97b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<text><![CDATA[School Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="54" width="130" height="20" uuid="2e1fb775-9dee-4056-b7f5-00979f2b22da"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[REGISTRATION FORM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="213" y="91" width="134" height="17" uuid="5bce6ffb-15eb-4265-a607-d80e9101b2a0"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_gradesection}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="213" y="74" width="134" height="17" uuid="fd5b3160-d228-4fc3-b948-d210371f037d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Grade & Section]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="91" width="209" height="17" uuid="dc9461b6-1c28-4c13-a7ba-9ffc6cc6a085"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_student_name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="134" y="3" width="66" height="51" uuid="7318f258-0ae5-4146-b0e3-88a4b7ebb1e3"/>
+				<imageExpression><![CDATA["..\\reports\\logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="36" y="74" width="134" height="17" uuid="afba9c4f-6ecd-4dbc-b7a9-d23046d06dfb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="20" width="134" height="17" uuid="a7fd03f2-8396-47f0-a05d-fed487478279"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[STUDENT'S COPY]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="9" y="0" width="54" height="17" uuid="695055b9-4906-4787-91b4-ebeeba094d18"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TIME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="77" height="17" uuid="d3663dff-4104-48ec-9503-e3f0f32fd91b"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SUBJECT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="310" y="0" width="92" height="17" uuid="24c34d13-44c1-4b61-a3f7-e6cbbce3feee"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SUBJECT TEACHER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="17" uuid="7658ba02-188d-45e7-b15b-f77d1c25f11c"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ROOM NO.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField>
+				<reportElement x="9" y="0" width="135" height="17" uuid="e92592f0-70ad-4422-b5f1-8fae3afd7955"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="164" height="17" uuid="0df594a5-fddd-4e1d-989c-24de2dc2ad13"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="310" y="0" width="145" height="17" uuid="2a9dae7f-ca0d-426b-96a1-9d090a2daefa"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_subject_teacher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="0" width="100" height="17" uuid="95f8f17f-c9a9-4269-bcf9-7b0ec827da3b"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_room_no}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="127" splitType="Stretch">
+			<textField>
+				<reportElement x="366" y="47" width="189" height="17" uuid="3cd966a3-b824-457d-a2df-33bb5a61f07c"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_shs_class_adviser}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="366" y="64" width="189" height="17" uuid="b69a3a91-3aa9-497a-95ed-d9f90e26b59f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Class Adviser]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="47" width="209" height="17" uuid="c155ae0c-1563-45b2-87ad-95affa6738fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_shs_principal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="64" width="209" height="17" uuid="b003bcbd-ec4d-4a85-b2a4-95c9421519bd"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Serif" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_shs_principal_lvl}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="107" width="119" height="17" uuid="4a583057-7aba-40da-b37c-97036f6c00b5"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[School Supplies Issued To:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="107" width="283" height="17" uuid="a1c81965-b671-4312-92d5-2c891b187361"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sd_student_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="475" y="107" width="80" height="17" uuid="438ebd1e-1bcd-4062-9011-320eca03bb64"/>
+				<textElement>
+					<font fontName="Serif" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sj_sy}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="402" y="107" width="73" height="17" uuid="b82bbd3b-f5c4-4c22-bc80-e53dabd9cbc6"/>
+				<textElement>
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[this School Year:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="209" height="17" uuid="8967eecb-257f-4fa8-ad45-d4b3002c3a3e"/>
+				<textElement>
+					<font fontName="Serif" size="8" isBold="false"/>
+				</textElement>
+				<text><![CDATA[APPROVED:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="384" y="46" width="153" height="1" uuid="8b0e56cb-6e73-4b77-a72e-fc6a244193de"/>
+			</line>
+			<line>
+				<reportElement x="36" y="47" width="144" height="1" uuid="ea1c36d4-8056-4aa1-8d1f-a154e95294fa"/>
+			</line>
+			<line>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="96" width="555" height="1" uuid="89482717-985a-4d20-ba2a-f5f86047e08e"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>
